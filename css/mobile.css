@@ -7,12 +7,12 @@
   }
   
   body {
-    background: #e35869;
+    background: F5F5F5;
     font-family: 'Rubik', sans-serif;
   }
   
   .login-form {
-    background: #fff;
+    background: F2F2F2;
     width: 500px;
     margin: 65px auto;
     display: -webkit-box;
