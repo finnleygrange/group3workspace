@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-  }
+  }  
   
   body {
     background: #F5F5F5;
     font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
   }
   
   .login-form {
@@ -211,4 +213,29 @@ body {
   }
   .register-form .action button:nth-child(1):hover {
     background: #3c4d6d;
+  }
+
+
+
+
+
+#chart-block {
+
+  background-color: #222;
+  width: 100%;
+  padding: 5%;
+}
+
+
+
+
+  button {
+    background-color: #4CAF50; /* Set background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set display to inline-block */
+    font-size: 16px; /* Set font size */
   }
