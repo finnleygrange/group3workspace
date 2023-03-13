@@ -26,13 +26,19 @@ nav ul {
 }
 
 li {
-    margin: 3px;
+    margin: 5px;
     background-color: #38f902;
     padding: 9px 18px;
+    transition: 0.25s;
+}
+
+li:hover {
+    background-color: #2ed500;
 }
 
 a {
     color: #2e816b;
+    text-decoration: none;
 }
 
 #buttons {
@@ -48,6 +54,7 @@ button {
     background-color: #fff;
     color: #333;
     cursor: pointer;
+    
 }
 
 
@@ -82,3 +89,6 @@ button {
     text-decoration: underline;
   }
 
+  .active-link {
+    text-decoration: underline;
+  }

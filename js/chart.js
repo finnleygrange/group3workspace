@@ -99,6 +99,26 @@ FusionCharts.ready(function () {
 
 
 
+
+
+
+
+      // Get the current page URL
+const currentUrl = window.location.href;
+
+// Get the link elements
+const page1Link = document.getElementById('my_dashboard-link');
+const page2Link = document.getElementById('dashboard-link');
+
+// Check which link matches the current page URL
+if (currentUrl.includes('my_dashboard.php')) {
+  page1Link.classList.add('active-link');
+} else if (currentUrl.includes('dashboard.php')) {
+  page2Link.classList.add('active-link');
+}
+
+
+
 })();
 
 

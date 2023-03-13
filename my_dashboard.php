@@ -8,6 +8,8 @@
     <title>Group3Workspace</title>
     <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.export.js"></script>
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -18,8 +20,8 @@
     <div>
         <nav>
             <ul>
-                <li><a href="./my_dashboard.php">My Dashboard</a></li>
-                <li><a href="./dashboard.php">Waterman Group</a></li>
+                <li><a href="./my_dashboard.php" id="my_dashboard-link">My Dashboard</a></li>
+                <li><a href="./dashboard.php" id="dashboard-link">Waterman Group</a></li>
             </ul>
         </nav>
     </div>
@@ -31,8 +33,9 @@
             <option value="bar2d">Bar Chart</option>
             <option value="pie2d">Pie Chart</option>
         </select>
+        <button id="export">Export</button>
     </div>
-    
+
 
 
 
