@@ -27,10 +27,10 @@ const chartData = [{
 
 //STEP 3 - Chart Configurations
 const chartConfig = {
-    type: 'column2d',
-    renderAt: 'chart-container',
-    width: '50%',
-    height: '50%',
+    type: 'bar2d',
+    renderAt: 'chart',
+    width: '100%',
+    height: '100%',
     dataFormat: 'json',
     dataSource: {
         // Chart Configuration
@@ -64,16 +64,51 @@ FusionCharts.ready(function () {
 
 
 (function () {
-    document.getElementById("chart1").onclick = function () {
-        fusioncharts.chartType('pie2d');
-    }
+    // document.getElementById("chart1").onclick = function () {
+    //     fusioncharts.chartType('pie2d');
+    // }
 
-    document.getElementById("chart2").onclick = function () {
-        fusioncharts.chartType('bar2d');
-    }
+    // document.getElementById("chart2").onclick = function () {
+    //     fusioncharts.chartType('bar2d');
+    // }
 
-    document.getElementById("chart3").onclick = function () {
-        fusioncharts.chartType('chord');
-    }
+    var chartTypeSelect = document.getElementById("chartType");
+    chartTypeSelect.addEventListener('change', function () {
+        var selectedChartType = chartTypeSelect.value;
+        console.log('HELLO');
+        console.log(chartTypeSelect);
+        if (selectedChartType == "pie2d") {
+            fusioncharts.chartType('pie2d');
+        console.log('HELLO');
+
+        }
+        else if (selectedChartType == "bar2d") {
+            fusioncharts.chartType('bar2d');
+        console.log('HELLO');
+
+        }
+    });
+
+
+    document.getElementById("export").addEventListener("click", function() {
+        FusionCharts.batchExport({
+          "exportFormat": "PDF"
+        });
+      });
+
+
+
+
 })();
+
+
+
+
+
+
+
+
+
+
+
 
